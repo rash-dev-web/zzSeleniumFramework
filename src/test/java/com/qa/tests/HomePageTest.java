@@ -9,11 +9,12 @@ import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 
-public class LoginTest extends TestBase {
+public class HomePageTest extends TestBase {
+
 	LoginPage loginPage;
 	HomePage homePage;
 
-	public LoginTest() {
+	public HomePageTest() {
 		super();
 	}
 
@@ -21,17 +22,18 @@ public class LoginTest extends TestBase {
 	public void setUp() {
 		init();
 		loginPage = new LoginPage();
-	}
-
-	@Test(priority=1)
-	public void validateTitle() {
-		String title = "Cogmento CRM";
-		Assert.assertEquals(loginPage.validateTitle(), title);
-	}
-
-	@Test(priority=2)
-	public void loginTest() {
 		homePage = loginPage.signIn(prop.getProperty("username"), prop.getProperty("password"));
+	}
+
+	@Test
+	public void verifyTitle() {
+		String title = homePage.verifyTitle();
+		Assert.assertEquals(title, "Cogmento CRM");
+	}
+
+	@Test
+	public void verifyUser() {
+		Assert.assertEquals(homePage.verifyUser(), prop.getProperty("user"));
 
 	}
 
