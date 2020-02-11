@@ -2,6 +2,7 @@ package com.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -18,14 +19,21 @@ public class TestBase {
 	public TestBase() {
 		prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("./zzTesting/src/main/java/com/qa/config/config.properties");
+			FileInputStream fis = new FileInputStream(
+					"D:\\Automation\\zzTesting\\src\\main\\java\\com\\qa\\config\\config.properties");
+			prop.load(fis);
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	public void init() {
+
 		if (prop.getProperty("browser").equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"D:\\Automation\\zzTesting\\src\\main\\java\\com\\qa\\config\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.get(prop.getProperty("url"));
