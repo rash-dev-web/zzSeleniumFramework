@@ -9,6 +9,10 @@ import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 public class LoginTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
@@ -24,12 +28,16 @@ public class LoginTest extends TestBase {
 	}
 
 	@Test(priority=1)
+	@Severity(SeverityLevel.NORMAL)
+	@Story("validateTitle")
 	public void validateTitle() {
 		String title = "Cogmento CRM";
 		Assert.assertEquals(loginPage.validateTitle(), title);
 	}
 
 	@Test(priority=2)
+	@Severity(SeverityLevel.CRITICAL)
+	@Story("loginTest")
 	public void loginTest() {
 		homePage = loginPage.signIn(prop.getProperty("username"), prop.getProperty("password"));
 

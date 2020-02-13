@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends TestBase {
 
 	@FindBy(name = "email")
@@ -24,12 +26,14 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Validating title")
 	public String validateTitle() {
 		
 		return driver.getTitle();
 		
 	}
 
+	@Step("login with username :{0} and password :{1} ")
 	public HomePage signIn(String uname, String pwd) {
 		
 		email.sendKeys(uname);
