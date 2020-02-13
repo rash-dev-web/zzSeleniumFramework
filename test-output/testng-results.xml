@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="64970" started-at="2020-02-12T11:17:04Z" finished-at="2020-02-12T11:18:09Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="64970" started-at="2020-02-12T11:17:04Z" finished-at="2020-02-12T11:18:09Z">
+      <class name="com.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="setUp" is-config="true" duration-ms="24454" started-at="2020-02-12T11:17:04Z" finished-at="2020-02-12T11:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="verifyTitle" duration-ms="114" started-at="2020-02-12T11:17:28Z" finished-at="2020-02-12T11:17:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="tearDown" is-config="true" duration-ms="342" started-at="2020-02-12T11:17:28Z" finished-at="2020-02-12T11:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="setUp" is-config="true" duration-ms="11565" started-at="2020-02-12T11:17:29Z" finished-at="2020-02-12T11:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUser()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="verifyUser" duration-ms="1955" started-at="2020-02-12T11:17:40Z" finished-at="2020-02-12T11:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomePageTest@59f99ea]" name="tearDown" is-config="true" duration-ms="279" started-at="2020-02-12T11:17:42Z" finished-at="2020-02-12T11:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.HomePageTest -->
+      <class name="com.qa.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginTest@27efef64]" name="setUp" is-config="true" duration-ms="11659" started-at="2020-02-12T11:17:42Z" finished-at="2020-02-12T11:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.qa.tests.LoginTest@27efef64]" name="validateTitle" duration-ms="14" started-at="2020-02-12T11:17:54Z" finished-at="2020-02-12T11:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@27efef64]" name="tearDown" is-config="true" duration-ms="179" started-at="2020-02-12T11:17:54Z" finished-at="2020-02-12T11:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginTest@27efef64]" name="setUp" is-config="true" duration-ms="13417" started-at="2020-02-12T11:17:54Z" finished-at="2020-02-12T11:18:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.qa.tests.LoginTest@27efef64]" name="loginTest" duration-ms="685" started-at="2020-02-12T11:18:08Z" finished-at="2020-02-12T11:18:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@27efef64]" name="tearDown" is-config="true" duration-ms="255" started-at="2020-02-12T11:18:08Z" finished-at="2020-02-12T11:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
