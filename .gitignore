@@ -1,2 +1,4 @@
 /target/
 *.class
+*.json
+/test-output
