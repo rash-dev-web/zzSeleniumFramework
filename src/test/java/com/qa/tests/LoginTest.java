@@ -1,5 +1,6 @@
 package com.qa.tests;
 
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,15 +17,16 @@ import io.qameta.allure.Story;
 public class LoginTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
-
 	public LoginTest() {
 		super();
 	}
 
 	@BeforeMethod
 	public void setUp() {
+		//logger.info("setUp started...");
 		init();
 		loginPage = new LoginPage();
+	//	logger.info("setUp completed...");
 	}
 
 	@Test(priority=1)
